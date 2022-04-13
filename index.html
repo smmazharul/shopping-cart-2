@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="structure">
+          <h1>Shopping cart</h1>
+      
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Product name</th>
+                <th>Unit price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="all_products">
+              <tr>
+                <td>This is a product name</td>
+                <td>1.80</td>
+                <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="2" contenteditable></td>
+                <td>3.60</td>
+                <td class="remove"><button type="button">Remove</button></td>
+              </tr>
+              <tr>
+                <td>Postcard</td>
+                <td>2.99</td>
+                <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="1" contenteditable></td>
+                <td>2.99</td>
+                <td class="remove"><button type="button">Remove</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><input type="text" id="name_product" placeholder="Name of the product" contenteditable></td>
+                <td><input  type="number" step="0.01" id="price_product" value="0.50" contenteditable></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" id="add_button">Add product</button></td>
+              </tr>
+            </tfoot>
+          </table>
+          <h2>Total : <span id="total_display">0 euros</span></h2>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

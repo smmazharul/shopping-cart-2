@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-color: #333; 
+	width: 100%;
+	margin: 0; 
+}
+
+p, button, input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	padding: 5px 10px;
+	margin: 1px;
+}
+
+h2 {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid slategrey;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+tbody button {
+	color: white;
+	background-color: tomato;
+	border: none;
+	border-radius: 3px;
+}
+
+tbody button:hover {
+	background-color: #da472d;
+}
+
+input[type="number"] {
+	width: 50px;
+}
+
+#price_product {
+	width: 100px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 5em;
+}
+
+.structure {
+	width: 80%;
+	background-color: black;
+	border-radius: 10px;
+	padding: 20px;
+	margin: auto;
+}
